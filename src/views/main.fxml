@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane fx:id="mainStackPane" prefHeight="660.0" prefWidth="1331.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainViewController">
+   <children>
+      <AnchorPane prefHeight="705.0" prefWidth="1331.0">
+         <children>
+            <JFXToolbar fx:id="toolbar" prefHeight="70.0" prefWidth="1200.0" styleClass="toolbar">
+               <left>
+                  <JFXHamburger fx:id="hamburger" prefHeight="74.0" prefWidth="79.0" BorderPane.alignment="CENTER" />
+               </left>
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <TextField layoutX="921.0" layoutY="18.0" />
+                     </children>
+                  </AnchorPane>
+               </center>
+            </JFXToolbar>
+            <AnchorPane fx:id="contentPane" layoutX="89.0" layoutY="56.0" prefHeight="722.0" prefWidth="1242.0" />
+            <JFXDrawer fx:id="drawer" defaultDrawerSize="150.0" layoutY="57.0" prefHeight="701.0" prefWidth="227.0">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </JFXDrawer>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

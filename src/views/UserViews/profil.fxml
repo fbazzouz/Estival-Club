@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="594.0" prefWidth="1191.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.UserController.ProfilController">
+   <children>
+      <AnchorPane fx:id="AP_FormulaireReservation" prefHeight="594.0" prefWidth="1191.0" styleClass="qsd" stylesheets="@style.css" StackPane.alignment="TOP_LEFT">
+         <children>
+            <Label fx:id="LB_Paye" layoutX="212.0" layoutY="8.0" prefHeight="71.0" prefWidth="763.0" text="modifier votre reservation" textAlignment="CENTER" textFill="#bd3d00" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Century Gothic Bold" size="48.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#aaa1a1" height="10.5" radius="10.575" width="33.8" />
+               </effect>
+            </Label>
+            <Pane fx:id="modifier" layoutX="292.0" layoutY="87.0" prefHeight="317.0" prefWidth="701.0" style="-fx-background-color: #4592af;" stylesheets="@style.css">
+               <children>
+                  <JFXComboBox fx:id="TF_TypeRestauration" editable="true" layoutX="78.0" layoutY="103.0" prefHeight="25.0" prefWidth="244.0" promptText="prenom" styleClass="combobox" stylesheets="@style.css" unFocusColor="#c49018">
+                     <items>
+                        <FXCollections fx:factory="observableArrayList">
+                           <String fx:value="Demi Pension" />
+                           <String fx:value="Pension Complete" />
+                           <String fx:value="Restauration Personnelle" />
+                        </FXCollections>
+                     </items>
+                  </JFXComboBox>
+                  <JFXComboBox fx:id="TF_TypeHebergement" editable="true" layoutX="78.0" layoutY="137.0" prefHeight="25.0" prefWidth="243.0" promptText="ville" styleClass="combobox" stylesheets="@style.css" unFocusColor="#c49018">
+                     <items>
+                        <FXCollections fx:factory="observableArrayList">
+                           <String fx:value="Caravane" />
+                           <String fx:value="Bungalow" />
+                           <String fx:value="Appartement" />
+                        </FXCollections>
+                     </items>
+                  </JFXComboBox>
+                  <JFXComboBox fx:id="TF_NbPersonnes" editable="true" layoutX="79.0" layoutY="59.0" prefHeight="25.0" prefWidth="158.0" promptText="nom" styleClass="combobox" stylesheets="@style.css" unFocusColor="#c49018">
+                     <items>
+                        <FXCollections fx:factory="observableArrayList">
+                           <String fx:value="2" />
+                           <String fx:value="4" />
+                           <String fx:value="6" />
+                        </FXCollections>
+                     </items>
+                  </JFXComboBox>
+                  <JFXButton fx:id="save" layoutX="504.0" layoutY="248.0" onAction="#save" prefHeight="52.0" prefWidth="168.0" style="-fx-background-color: #373a6d; -fx-border-radius: 300; -fx-border-color: white; -fx-background-radius: 300; -fx-text-fill: white;" text="save" textAlignment="CENTER">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="cancel" layoutX="329.0" layoutY="249.0" onAction="#cancel" prefHeight="52.0" prefWidth="142.0" style="-fx-background-color: #bd3d00; -fx-border-radius: 200; -fx-border-color: white; -fx-background-radius: 200; -fx-text-fill: white;" text="cancel" textAlignment="CENTER">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Pane fx:id="show" layoutX="292.0" layoutY="87.0" prefHeight="317.0" prefWidth="701.0" style="-fx-background-color: #4592af;" stylesheets="@style.css">
+               <children>
+                  <JFXButton fx:id="update" layoutX="464.0" layoutY="245.0" onAction="#update" prefHeight="52.0" prefWidth="211.0" style="-fx-background-color: #373a6d; -fx-border-radius: 300; -fx-border-color: white; -fx-background-radius: 300; -fx-text-fill: white;" text="modifier" textAlignment="CENTER" textFill="#bd3d00">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <Label layoutX="57.0" layoutY="34.0" prefHeight="17.0" prefWidth="189.0" text="nom" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="28.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="91.0" prefHeight="17.0" prefWidth="189.0" text="prenom" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="28.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="141.0" prefHeight="17.0" prefWidth="189.0" text="ville" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="28.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

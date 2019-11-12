@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Accueil">
+    <AnchorPane prefHeight="622.0" prefWidth="900.0" style="-fx-background-color: white;">
+        <children>
+            <AnchorPane layoutY="39.0" prefHeight="561.0" prefWidth="900.0">
+                <children>
+                    <JFXButton fx:id="btn_m2" alignment="TOP_CENTER" layoutX="297.0" layoutY="66.0" onAction="#btn2" prefHeight="50.0" prefWidth="148.0" ripplerFill="#0057c2" style="-fx-background-color: #373a6d; -fx-background-radius: 10;" text="Restauration" textFill="WHITE">
+                        <font>
+                            <Font name="System Bold" size="15.0" />
+                        </font>
+                        <cursor>
+                            <Cursor fx:constant="HAND" />
+                        </cursor>
+                    </JFXButton>
+                    <JFXButton fx:id="btn_m" alignment="TOP_CENTER" layoutX="133.0" layoutY="65.0" onAction="#btn1" prefHeight="50.0" prefWidth="148.0" ripplerFill="#0057c2" style="-fx-background-color: #373a6d; -fx-background-radius: 10;" text="Hebergement" textFill="WHITE">
+                        <font>
+                            <Font name="System Bold" size="15.0" />
+                        </font>
+                        <cursor>
+                            <Cursor fx:constant="HAND" />
+                        </cursor>
+                    </JFXButton>
+                    <Pane fx:id="heb" layoutY="97.0" prefHeight="209.0" prefWidth="900.0" style="-fx-background-color: black;" />
+                    <Pane fx:id="main" layoutY="100.0" prefHeight="298.0" prefWidth="900.0">
+                        <children>
+                            <ImageView fitHeight="344.0" fitWidth="900.0" layoutY="-4.0" pickOnBounds="true">
+                                <image>
+                                    <Image url="@../images/OE9RQF0.jpg" />
+                                </image>
+                            </ImageView>
+                            <Pane layoutX="150.0" layoutY="183.0" prefHeight="50.0" prefWidth="593.0" style="-fx-background-color: rgba(0,0,0,0.4); -fx-background-radius: 3;">
+                                <children>
+                                    <JFXComboBox fx:id="TF_TypeHebergement" editable="true" layoutX="5.0" layoutY="14.0" prefHeight="25.0" prefWidth="133.0" promptText="Type Hebergement" styleClass="comboboxAccueil" stylesheets="@style.css" unFocusColor="#c49018">
+                                        <items>
+                                            <FXCollections fx:factory="observableArrayList">
+                                                <String fx:value="Caravane" />
+                                                <String fx:value="Bungalow" />
+                                                <String fx:value="Appartement" />
+                                            </FXCollections>
+                                        </items>
+                                    </JFXComboBox>
+                                    <JFXComboBox fx:id="TF_TypeRestauration" editable="true" layoutX="148.0" layoutY="14.0" prefHeight="25.0" prefWidth="133.0" promptText="Type Restauration" styleClass="comboboxAccueil" stylesheets="@style.css" unFocusColor="#c49018">
+                                        <items>
+                                            <FXCollections fx:factory="observableArrayList">
+                                                <String fx:value="Demi Pension" />
+                                                <String fx:value="Pension Complete" />
+                                                <String fx:value="Restauration Personnelle" />
+                                            </FXCollections>
+                                        </items>
+                                    </JFXComboBox>
+                                    <JFXComboBox fx:id="TF_NbPersonnes" editable="true" layoutX="291.0" layoutY="14.0" prefHeight="25.0" prefWidth="133.0" promptText="Nombre Personnes" styleClass="comboboxAccueil" stylesheets="@style.css" unFocusColor="#c49018">
+                                        <items>
+                                            <FXCollections fx:factory="observableArrayList">
+                                                <String fx:value="2" />
+                                                <String fx:value="4" />
+                                                <String fx:value="6" />
+                                            </FXCollections>
+                                        </items>
+                                    </JFXComboBox>
+                                    <JFXButton fx:id="simuler" alignment="CENTER" layoutX="447.0" layoutY="8.0" onAction="#simulerprix" prefHeight="37.0" prefWidth="106.0" ripplerFill="WHITE" style="-fx-background-radius: 10; -fx-background-color: #373a6d; -fx-border-radius: 4; -fx-border-width: 3;" text="Simuler" textFill="WHITE">
+                                        <font>
+                                            <Font name="System Bold" size="15.0" />
+                                        </font>
+                                        <cursor>
+                                            <Cursor fx:constant="HAND" />
+                                        </cursor>
+                                    </JFXButton>
+                                </children></Pane>
+                        </children>
+                    </Pane>
+                    <ImageView fitHeight="91.0" fitWidth="128.0" layoutX="3.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../images/ce.png" />
+                        </image>
+                    </ImageView>
+                    <JFXButton fx:id="sgn" alignment="CENTER" layoutX="732.0" layoutY="14.0" onAction="#LoadLogin" prefHeight="50.0" prefWidth="148.0" ripplerFill="WHITE" style="-fx-background-color: #ffffff; -fx-background-radius: 10; -fx-border-color: #373a6d; -fx-border-radius: 30; -fx-border-width: 3;" text="Sign In" textFill="#373a6d">
+                        <font>
+                            <Font name="System Bold" size="15.0" />
+                        </font>
+                        <cursor>
+                            <Cursor fx:constant="HAND" />
+                        </cursor>
+                    </JFXButton>
+                </children>
+            </AnchorPane>
+            <ImageView fitHeight="278.0" fitWidth="900.0" layoutY="398.0" pickOnBounds="true">
+                <image>
+                    <Image url="@../images/12.PNG" />
+                </image>
+            </ImageView>
+        </children>
+    </AnchorPane>
+</StackPane>

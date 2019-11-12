@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="mainStackPane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainViewControlleruser">
+   <children>
+      <AnchorPane prefHeight="609.0" prefWidth="1264.0">
+         <children>
+            <JFXToolbar fx:id="toolbar" prefHeight="70.0" prefWidth="1200.0" styleClass="toolbar">
+               <left>
+                  <JFXHamburger fx:id="hamburger" prefHeight="74.0" prefWidth="79.0" BorderPane.alignment="CENTER" />
+               </left>
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+
+                     </children>
+                  </AnchorPane>
+               </center>
+            </JFXToolbar>
+            <AnchorPane fx:id="contentPane" layoutX="64.0" layoutY="67.0" prefHeight="582.0" prefWidth="1200.0">
+               <children>
+                  <AnchorPane fx:id="AP_Appartement1" layoutX="51.0" layoutY="170.0" prefHeight="210.0" prefWidth="346.0" styleClass="anchorpane" stylesheets="@UserViews/style.css">
+                     <children>
+                        <ImageView fx:id="Img11" fitHeight="148.0" fitWidth="323.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../images/appartement.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="BTN_SemiPension1" layoutX="20.0" layoutY="167.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="302.0" stylesheets="@UserViews/style.css" text="Semi-Pension +50DH/Per" textFill="#fdb603">
+                           <font>
+                              <Font name="Century Gothic Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="AP_Appartement11" layoutX="61.0" layoutY="363.0" prefHeight="210.0" prefWidth="346.0" styleClass="anchorpane" stylesheets="@UserViews/style.css">
+                     <children>
+                        <ImageView fx:id="Img111" fitHeight="148.0" fitWidth="323.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../images/appartement.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="BTN_SemiPension11" layoutX="20.0" layoutY="167.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="302.0" stylesheets="@UserViews/style.css" text="Semi-Pension +50DH/Per" textFill="#fdb603">
+                           <font>
+                              <Font name="Century Gothic Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="AP_Appartement12" layoutX="434.0" layoutY="363.0" prefHeight="210.0" prefWidth="346.0" styleClass="anchorpane" stylesheets="@UserViews/style.css">
+                     <children>
+                        <ImageView fx:id="Img112" fitHeight="148.0" fitWidth="323.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../images/appartement.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="BTN_SemiPension12" layoutX="20.0" layoutY="167.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="302.0" stylesheets="@UserViews/style.css" text="Semi-Pension +50DH/Per" textFill="#fdb603">
+                           <font>
+                              <Font name="Century Gothic Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="AP_Appartement121" layoutX="823.0" layoutY="364.0" prefHeight="210.0" prefWidth="346.0" styleClass="anchorpane" stylesheets="@UserViews/style.css">
+                     <children>
+                        <ImageView fx:id="Img1121" fitHeight="148.0" fitWidth="323.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../images/appartement.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="BTN_SemiPension121" layoutX="20.0" layoutY="167.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="302.0" stylesheets="@UserViews/style.css" text="Semi-Pension +50DH/Per" textFill="#fdb603">
+                           <font>
+                              <Font name="Century Gothic Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children></AnchorPane>
+            <JFXDrawer fx:id="drawer" defaultDrawerSize="150.0" layoutY="57.0" prefHeight="618.0" prefWidth="227.0">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </JFXDrawer>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
